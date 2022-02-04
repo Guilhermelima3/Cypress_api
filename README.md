@@ -29,21 +29,6 @@ Livros.
 ```
  npm i -D @shelex/cypress-allure-plugin
 ```
-- Inserir no arquivo /plugins/index.js:
-```
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
-
-module.exports = (on, config) => {
-    allureWriter(on, config);
-    return config;
-};
-```
-- Inserir no arquivo /support/index.js :
-```
-import '@shelex/cypress-allure-plugin';
-require('@shelex/cypress-allure-plugin');
-```
-
 - Após esses comandos serem digitados será instalado todas as dependências necessárias para a execução do projeto.
 
 ### Executando os testes
